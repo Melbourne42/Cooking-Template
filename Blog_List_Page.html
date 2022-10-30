@@ -7,7 +7,16 @@
     <link rel="stylesheet" href="styles/Blog.css" />
     <title>Document</title>
   </head>
-  <style></style>
+  <style>
+    .form {
+      border: 1px solid black;
+    }
+    .search {
+      width: 700px;
+      height: 80px;
+      border-radius: 24px;
+    }
+  </style>
   <body>
     <header class="header">
       <menu class="header__menu">
@@ -30,6 +39,16 @@
           eiusmod tempor incididunt ut labore et dolore
         </p>
       </div>
+      <form>
+        <div class="form">
+          <input
+            class="search"
+            type="search"
+            placeholder="Search article, news or recipe..."
+          />
+          <input type="submit" />
+        </div>
+      </form>
     </main>
   </body>
 </html>
