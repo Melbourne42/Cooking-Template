@@ -24,14 +24,24 @@
       height: 25px;
       text-align: center;
     }
-
     .pagination a.active {
       background-color: black;
       color: white;
     }
-
     .pagination a:hover:not(.active) {
       background-color: #ddd;
+    }
+    .footer {
+      display: flex;
+      border-bottom: 1px solid gray;
+      padding-top: 50px;
+      justify-content: space-between;
+    }
+    .footer__menu {
+      display: inline-flex;
+      border: 1px solid black;
+      width: 400px;
+      height: 19px;
     }
   </style>
   <body>
@@ -169,8 +179,26 @@
       <a href="#">3</a>
       <a href="#">4</a>
       <a href="#">5</a>
-      <a href="#">6</a>
+      <a href="#">...</a>
       <a href="#">&raquo;</a>
     </div>
+    <!-- Пробежавший мимо баннер -->
+    <footer>
+      <div class="footer">
+        <div>
+          <img src="assets/Foodieland.svg" alt="" />
+          <p>Lorem ipsum dolor sit amet, consectetuipisicing elit,</p>
+        </div>
+        <div>
+          <menu class="footer__menu">
+            <a href="2">Recipies</a>
+            <a href="3">Blog</a>
+            <a href="4">Contact</a>
+            <a href="5">About us</a>
+          </menu>
+        </div>
+      </div>
+      <div>&#169 2022 Flowbase. Powered by Webflow</div>
+    </footer>
   </body>
 </html>
