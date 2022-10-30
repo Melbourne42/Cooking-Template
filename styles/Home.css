@@ -1,0 +1,27 @@
+html, body {
+    font-family:'Inter'; 
+}
+
+.home-page {
+    display:grid;
+    grid-template-columns: 45% 10% 45%;
+    justify-content: space-between;
+}
+
+.home-page__header {
+    background-color: #E7FAFE;
+}
+
+.home-page__categories {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.home-page__categories_header, .home-page__categories_card {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 7%;
+}
+
