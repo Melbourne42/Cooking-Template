@@ -41,7 +41,9 @@
     .sections-aside{
       display: flex;
       margin-left: 80px;
+      margin-right: 27px;
       border: 1px solid black;
+      justify-content: space-between;
     }
     .sections{
       width: 840px;
@@ -67,6 +69,17 @@
       height: 479px;
       border: 1px solid black;
       margin-left: 40px;
+    }
+    .aside__img{
+      float: left;
+      width: 180px;
+      height: 120px;
+    }
+    .pagination{
+      display: flex;
+      border: 1px solid black;
+      justify-content: center;
+      margin-top: 80px;
     }
     .pagination a {
       display: inline-block;
@@ -211,24 +224,23 @@
       </div>
       <div class="aside">
         <aside>
-          <img src="" alt="" />
           <h2>Tasty Recipes</h2>
+          <img src="assets/images/image_Chicken_Meatballs_with_Cream_Cheese.png" alt="" class="aside__img" />
           <h3>Chicken Meatballs with Cream Cheese</h3>
           <p>By Andreas Paula</p>
         </aside>
         <aside>
-          <img src="" alt="" />
+          <img src="assets/images/image_The_Creamiest_Creamy_Chicken_and_Bacon_Pasta.png" alt="" class="aside__img"/>
           <h3>Traditional Bolognaise Ragu</h3>
           <p>By Andreas Paula</p>
         </aside>
         <aside>
-          <img src="" alt="" />
+          <img src="assets/images/image_pork_and_chive.png" alt="" class="aside__img" />
           <h3>Pork and Chive Chinese Dumplings</h3>
           <p>By Andreas Paula</p>
         </aside>
       </div>
     </div>
-    </main>
     <div class="pagination">
       <a href="#">1</a>
       <a class="active" href="#">2</a>
@@ -238,6 +250,7 @@
       <a href="#">...</a>
       <a href="#">&raquo;</a>
     </div>
+    </main>
     <!-- Пробежавший мимо баннер -->
     <footer>
       <div class="footer">
