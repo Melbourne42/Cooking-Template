@@ -7,8 +7,9 @@ html, body {
     .header__menu {
       display: flex;
       justify-content: space-between;
-      margin: 20px;
-      margin-right: 60px;
+      margin-right: 80.04px;
+      margin-left: 80px;
+      margin-top: 40px;
       padding: 20px;
     }
     .menu,
