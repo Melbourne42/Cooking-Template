@@ -16,7 +16,7 @@ html, body {
     a {
       display: flex;
       justify-content: space-around;
-      width: 505px;
+      width: 570px;
       text-decoration: none;
       color: black;
     }
