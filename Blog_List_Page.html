@@ -19,13 +19,27 @@
       line-height: 28px;
       color: rgba(0, 0, 0, 0.6);;
     }
-    .main__h1{
+    .main-h1{
       text-align: center;
     }
     .search {
       width: 700px;
       height: 80px;
       border-radius: 24px;
+    }
+    .sections-aside{
+      display: flex;
+      margin-left: 80px;
+    }
+    .sections{
+      width: 840px;
+      border: 1px solid black;
+    }
+    .aside{
+      width: 453px;
+      height: 479px;
+      border: 1px solid black;
+      margin-left: 40px;
     }
     .pagination a {
       display: inline-block;
@@ -75,7 +89,7 @@
       </menu>
     </header>
     <main>
-      <div class="main__h1">
+      <div class="main-h1">
         <h1>Blog & Article</h1>
         <p class="light-text">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
@@ -88,7 +102,8 @@
         />
         <button>Search</button>
       </div>
-      <div>
+      <div class="sections-aside">
+      <div class="sections">
         <section>
           <h3>Crochet Projects for Noodle Lovers</h3>
           <p class="light-text">
@@ -168,7 +183,7 @@
           </div>
         </section>
       </div>
-      <div>
+      <div class="aside">
         <aside>
           <h2>Tasty Recipes</h2>
           <img src="" alt="" />
@@ -186,6 +201,7 @@
           <p>By Andreas Paula</p>
         </aside>
       </div>
+    </div>
     </main>
     <div class="pagination">
       <a href="#">1</a>
