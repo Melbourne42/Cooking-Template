@@ -1,11 +1,18 @@
 .home-page {
-    display:grid;
-    grid-template-columns: 45% 10% 45%;
-    justify-content: space-between;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: 1fr;
+        grid-column-gap: 0px;
+        grid-row-gap: 0px;
 }
 
 .home-page__header {
+    grid-area: 1 / 1 / 2 / 2;
     background-color: #E7FAFE;
+}
+
+.home-page__image, .home-page__sticker {
+    grid-area: 1 / 2 / 2 / 3;
 }
 
 .home-page__categories {
@@ -19,4 +26,21 @@
     flex-direction: row;
     justify-content: space-between;
     margin-top: 7%;
+}
+
+.home-page__additional-information {
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+.home-page__additional-information_image {
+    border-radius: 30px;
+}
+
+.home-page__instagram_instagram-account, .home-page__additional-information_image {
+    background-image: linear-gradient(180deg, rgba(231, 249, 253, 0) 0%, #E7F9FD 100%);
+}
+
+h1, p {
+    text-align: center;
 }
