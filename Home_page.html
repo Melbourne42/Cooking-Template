@@ -13,6 +13,7 @@
     />
     <link rel="stylesheet" type="text/css" href="styles/Home.css" />
     <link rel="stylesheet" href="styles/General.css" />
+    <link rel="stylesheet" href="styles/Normalize.css">
   </head>
   <body>
     <header>
@@ -32,31 +33,35 @@
       <article class="home-page">
         <div class="home-page__header">
           <img src="assets/images/hot_recipes.png" alt="recipes" />
-          <h1>Spicy delicious chicken wings</h1>
-          <p>
+          <h1 class="home-page__header_start-page-title">Spicy delicious chicken wings</h1>
+          <p class="home-page__header_start-page-text">
             Lorem ipsum dolor sit amet, consectetuipisicing elit, sed do eiusmod
             tempor incididunt ut labore et dolore magna aliqut enim ad minim
           </p>
           <img src="assets/images/icon_timer_30_minutes.png" alt="timer" />
           <img src="assets/images/icon_ForkKnife.png" alt="cutlery" />
-          <div>
-            <img src="assets/images/Photo_John_Smith.png" alt="autor" />
-            John Smith 15 March 2022
+          <div class="home-page__header_author">
+            <img src="assets/images/Photo_John_Smith.png" class="home-page__header_author-photo" alt="autor" />
+            <div class="home-page__header_author-name">
+              John Smith 
+            </div>
+              <time class="home-page__header_author-date" datetime="2022-03-15">15 March 2022</time>
             <img
               src="assets/images/Button_view_recipes.png"
+              class="home-page__header_author-recipes"
               alt="button recipes"
             />
           </div>
         </div>
         <img
-          src="assets/images/Handpicked_recipes.png"
-          class="home-page__sticker"
-          alt="sticker"
-        />
-        <img
           src="assets/images/baked_chicken_wings_asian_style_tomatoes_sauce_plate_1.png"
           class="home-page__image"
           alt="image home page"
+        />
+        <img
+          src="assets/images/Handpicked_recipes.png"
+          class="home-page__sticker"
+          alt="sticker"
         />
       </article>
       <section class="home-page__categories">
@@ -68,30 +73,30 @@
           />
         </div>
         <section class="home-page__categories_card">
-          <figure>
+          <figure class="home-page__categories_card-breakfast">
             <img
               src="assets/images/image_breakfast.png"
               alt="category breakfast"
             />
             <figcaption>Breakfast</figcaption>
           </figure>
-          <figure>
+          <figure class="home-page__categories_card-vegan">
             <img src="assets/images/image_vegan.png" alt="category vegan" />
             <figcaption>Vegan</figcaption>
           </figure>
-          <figure>
+          <figure class="home-page__categories_card-meat">
             <img src="assets/images/image_meat.png" alt="category meat" />
             <figcaption>Meat</figcaption>
           </figure>
-          <figure>
+          <figure class="home-page__categories_card-dessert">
             <img src="assets/images/image_dessert.png" alt="category dessert" />
             <figcaption>Dessert</figcaption>
           </figure>
-          <figure>
-            <img src="assets/images/image_lunch.png" alt="category lunch" />
+          <figure class="home-page__categories_card-lunch">
+            <img src="assets/images/image_lunch.png"  alt="category lunch" />
             <figcaption>Lunch</figcaption>
           </figure>
-          <figure>
+          <figure class="home-page__categories_card-chocolate">
             <img
               src="assets/images/image_chocolate.png"
               alt="category chocolate"
@@ -191,6 +196,7 @@
         </figcaption>
       </figure>
       <div class="home-page__recipes_banner">
+        <!-- баннер -->
         <img
           src="assets/images/Banner_Dont_forget_to_eat_healthy_food.png"
           alt="banner"
