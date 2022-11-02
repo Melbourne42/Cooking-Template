@@ -13,13 +13,24 @@
     padding-left: 5%;
 }
 
-.home-page__image, .home-page__sticker {
+.home-page__header_button {
+    margin-top: 3%;
+}
+
+.home-page__image  {
     grid-area: 1 / 2 / 2 / 3;
+}
+
+.home-page__sticker {
+    grid-area: 1 / 1 / 2 / 3;
+    margin-left: 45%;
+    margin-top: 3%;
 }
 
 .home-page__image {
     border-radius: 0px 40px 40px 0px;
 }
+
 .home-page__header_start-page-title {
     font-style: normal;
     font-size: 64px;
@@ -28,7 +39,7 @@
     width: 90%;
 }
 
-.home-page__header_start-page-text {
+.home-page__header_start-page-text, .home-page__recipes_text {
     font-style: normal;
     font-weight: 400;
     font-size: 16px;
@@ -38,12 +49,15 @@
 
 .home-page__header_start-page-title, .home-page__header_start-page-text {
     text-align: start;
+    margin-bottom: 5%;
+    margin-top: -2%;
 }
 
 .home-page__header_author {
     display: grid;
-    grid-template-columns: repeat(5, 1fr);
-    grid-template-rows: repeat(5, 1fr);
+    grid-template-columns: 10% 20% 1fr;
+    grid-template-rows: repeat(2, 1fr);
+    margin-top: 10%;
 }
 
 .home-page__header_author-photo {
@@ -59,8 +73,9 @@
 }
 
 .home-page__header_author-recipes {
-    grid-area: 1 / 3 / 3 / 6;
-    margin-left: 40%;
+    grid-area: 1 / 3 / 3 / 4;
+    justify-self: flex-end;
+    margin-right: 10%;
 }
 
 .home-page__categories {
@@ -73,11 +88,19 @@
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    margin-top: 7%;
+}
+
+.home-page__categories_header {
+    margin: 10% 5% 5% 5%;
+    font-style: normal;
+    font-size: 20px;
+    line-height: 58px;
+    letter-spacing: -0.04em;
 }
 
 .home-page__categories_card {
     text-align: center;
+    margin-bottom: 10%;
 }
 
 .home-page__categories_card-breakfast, .home-page__categories_card-vegan,
@@ -102,6 +125,36 @@
     height: 152px;
 }
 
+.home-page__recipes_title, .home-page__recipes_text {
+    text-align: center;
+}
+
+.home-page__recipes_title {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 48px;
+    line-height: 58px;
+    letter-spacing: -0.04em;
+}
+
+.home-page__recipes {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+}
+
+.home-page__recipes_recipe-1 {
+    grid-area: 1 / 1 / 2 / 3;
+}
+
+.home-page__recipes_icon-like {
+    grid-area: 1 / 1 / 2 / 3;
+}
+
+.home-page__recipes_name {
+    grid-area: 2 / 1 / 3 / 3;
+}
+
 .home-page__additional-information {
     display: flex;
     flex-wrap: nowrap;
@@ -115,6 +168,3 @@
     background-image: linear-gradient(180deg, rgba(231, 249, 253, 0) 0%, #E7F9FD 100%);
 }
 
-h1, p {
-    text-align: center;
-}
