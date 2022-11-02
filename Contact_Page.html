@@ -16,10 +16,20 @@
     <title>Document</title>
   </head>
   <style>
+    .recipies-list {
+      display: flex;
+      margin: 90px;
+      justify-content: space-between;
+      border: 1px solid black;
+    }
+    .recipies-name {
+      margin-top: 5px;
+      width: 290px;
+    }
     .recipies {
       display: flex;
       width: 230px;
-      border: 1px solid black;
+      margin-top: 10px;
       justify-content: space-between;
     }
   </style>
@@ -63,14 +73,14 @@
       </form>
       <!-- Пробежавший мимо баннер -->
       <h2>Check out the delicious recipe</h2>
-      <div>
+      <div class="recipies-list">
         <div>
           <figure>
             <img
               src="assets/images/image_Mixed_Tropical_Fruit_Salad_with_Superfood_Boosts.png"
               alt=""
             />
-            <figcaption>
+            <figcaption class="recipies-name">
               Mixed Tropical Fruit Salad with Superfood Boosts
             </figcaption>
             <div class="recipies">
@@ -85,7 +95,9 @@
               src="assets/images/image_Big_and_Juicy_Wagyu_Beef.png"
               alt=""
             />
-            <figcaption>Big and Juicy Wagyu Beef Cheeseburger</figcaption>
+            <figcaption class="recipies-name">
+              Big and Juicy Wagyu Beef Cheeseburger
+            </figcaption>
             <div class="recipies">
               <div><img src="assets/Timer.png" alt="" />30 minutes</div>
               <div><img src="assets/ForkKnife.svg" alt="" />Western</div>
@@ -98,7 +110,9 @@
               src="assets/images/image_Healthy_Japanese_Fried_Rice_with_Asparagus.png"
               alt=""
             />
-            <figcaption>Healthy Japanese Fried Rice with Asparagus</figcaption>
+            <figcaption class="recipies-name">
+              Healthy Japanese Fried Rice with Asparagus
+            </figcaption>
             <div class="recipies">
               <div><img src="assets/Timer.png" alt="" />30 minutes</div>
               <div><img src="assets/ForkKnife.svg" alt="" />Healthy</div>
@@ -111,7 +125,9 @@
               src="assets/images/image_Cauliflower_Walnut_Vegetarian_Taco_Meat.png"
               alt=""
             />
-            <figcaption>Cauliflower Walnut Vegetarian Taco Meat</figcaption>
+            <figcaption class="recipies-name">
+              Cauliflower Walnut Vegetarian Taco Meat
+            </figcaption>
             <div class="recipies">
               <div><img src="assets/Timer.png" alt="" />30 minutes</div>
               <div><img src="assets/ForkKnife.svg" alt="" />Eastern</div>
@@ -120,5 +136,22 @@
         </div>
       </div>
     </main>
+    <footer>
+      <div class="footer">
+        <div>
+          <img src="assets/Foodieland.svg" alt="" />
+          <p class="light-text">Lorem ipsum dolor sit amet, consectetuipisicing elit,</p>
+        </div>
+        <div>
+          <menu class="footer__menu">
+            <a href="2">Recipies</a>
+            <a href="3">Blog</a>
+            <a href="4">Contact</a>
+            <a href="5">About us</a>
+          </menu>
+        </div>
+      </div>
+      <div class="footer-webflow">&#169 2022 Flowbase. Powered by Webflow</div>
+    </footer>
   </body>
 </html>
