@@ -88,8 +88,8 @@
     }
     .aside{
       width: 453px;
-      height: 600px;
       border: 1px solid black;
+      margin-right: 27px;
     }
     .h2__aside{
       font-weight: 600;
@@ -108,6 +108,11 @@
       width: 180px;
       height: 120px;
       border-radius: 20px;
+      margin-right: 10px;
+    }
+    .aside-1, .aside-2, .aside-3{
+      border: 1px solid black;
+      padding: 15px;
     }
     .pagination{
       display: flex;
@@ -165,12 +170,13 @@
       <div class="sections-aside">
       <div class="sections">
         <section class="sectione__name">
-          <img src="assets/images/Image_Chicken_Ramen_Soup_with_Mushroom.png" alt="" class="section__img" />
-          <h3 class="h3-sections">Crochet Projects for Noodle Lovers</h3>
-          <p class="light-text">
+          <div>
+            <img src="assets/images/Image_Chicken_Ramen_Soup_with_Mushroom.png" alt="" class="section__img" />
+            <h3 class="h3-sections">Crochet Projects for Noodle Lovers</h3>
+            <p class="light-text">
             Lorem ipsum dolor sit amet, consectetuipisicing elit, sed do eiusmod
-            tempor incididunt ut labore et dolore magna aliqut enim
-          </p>
+            tempor incididunt ut labore et dolore magna aliqut enim</p>
+        </div>
           <div class="section__img_authors">
             <img src="assets/images/Photo_post_Wade Warren.png" alt="" />
             <p class="author-name">Wade Warren</p>
@@ -243,18 +249,18 @@
         </section>
       </div>
       <div class="aside">
-        <aside>
           <h2 class="h2__aside">Tasty Recipes</h2>
+          <aside class="aside-1">
           <img src="assets/images/image_Chicken_Meatballs_with_Cream_Cheese.png" alt="" class="aside__img" />
           <h3 class="h3__aside">Chicken Meatballs with Cream Cheese</h3>
           <p class="light-text__aside-date">By Andreas Paula</p>
         </aside>
-        <aside>
+        <aside class="aside-2">
           <img src="assets/images/image_The_Creamiest_Creamy_Chicken_and_Bacon_Pasta.png" alt="" class="aside__img"/>
           <h3 class="h3__aside">Traditional Bolognaise Ragu</h3>
           <p class="light-text__aside-date">By Andreas Paula</p>
         </aside>
-        <aside>
+        <aside class="aside-3">
           <img src="assets/images/image_pork_and_chive.png" alt="" class="aside__img" />
           <h3 class="h3__aside">Pork and Chive Chinese Dumplings</h3>
           <p class="light-text__aside-date">By Andreas Paula</p>
