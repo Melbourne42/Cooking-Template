@@ -35,3 +35,10 @@ html, body {
       margin-top: 48px;
       margin-bottom: 48px;
     }
+    .light-text{
+      font-style: normal;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 28px;
+      color: rgba(0, 0, 0, 0.6);;
+    }
