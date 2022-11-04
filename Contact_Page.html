@@ -29,9 +29,43 @@
       margin-left: 80px;
     }
     .form{
-      border: 1px solid black;
       width: 1280px;
       margin-left: 520px;
+      margin-right: 200px;
+    }
+    .input{
+      width: 400px;
+      height: 60px;
+      background: #FFFFFF;
+      border: 1px solid rgba(0, 0, 0, 0.1);
+      border-radius: 16px;
+    }
+    .messages{
+      display: flex;
+      width: 840px;
+      height: 200px;
+      background: #FFFFFF;
+      border: 1px solid rgba(0, 0, 0, 0.1);
+      border-radius: 16px;
+    }
+    .advertising{
+      font-style: normal;
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 24px;
+      display: flex;
+      align-items: center;
+      letter-spacing: -0.02em;
+      color: rgba(0, 0, 0, 0.6);
+      opacity: 0.8;
+    }
+    .button{
+      width: 180px;
+      height: 64px;
+      background: #000000;
+      border-radius: 16px;
+      color: #FFFFFF;
+      margin-top: 48px;
     }
     .contact-list{
       display: flex;
@@ -92,30 +126,30 @@
         <div class="contact-list">
           <div>
           <p class="contact-list__text">NAME</p>
-          <input type="text" />
+          <input type="text" class="input" placeholder="Enter your name..."/>
         </div>
         <div>
           <p class="contact-list__text">EMAIL ADDRESS</p>
-          <input type="text" />
+          <input type="text" class="input" placeholder="Your email address..."/>
         </div>
         </div>
         <div class="contact-list">
           <div>
           <p class="contact-list__text">SUBJECT</p>
-          <input type="text" />
+          <input type="text"  class="input" placeholder="Enter subject..."/>
         </div>
         <div>
           <p class="contact-list__text">ENQUIRY TYPE</p>
-          <select name="" id="">
+          <select name="" id="" class="input advertising" >
             <option value="Advertising">Advertising</option>
           </select>
         </div>
         </div>
         <div>
           <p class="contact-list__text">MESSAGES</p>
-          <input type="text" />
+          <input type="text" class="messages" placeholder="Enter your messages..."/>
         </div>
-        <button>Submit</button>
+        <button class="button">Submit</button>
       </form>
       <!-- Пробежавший мимо баннер -->
       <h2 class="h2">Check out the delicious recipe</h2>
