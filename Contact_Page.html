@@ -15,62 +15,6 @@
     />
     <title>Document</title>
   </head>
-  <style>
-    .h1{
-      text-align: center;
-      font-style: normal;
-      font-weight: 600;
-      font-size: 64px;
-      line-height: 77px;
-      letter-spacing: -0.04em;
-    }
-    .chef-img{
-      float: left;
-      margin-left: 80px;
-    }
-    .form{
-      border: 1px solid black;
-      width: 1280px;
-      margin-left: 520px;
-    }
-    .contact-list{
-      display: flex;
-      justify-content: space-between;
-    }
-    .contact-list__text{
-      font-style: normal;
-      font-weight: 500;
-      font-size: 12px;
-      line-height: 20px;
-      letter-spacing: 0.08em;
-      color: rgba(0, 0, 0, 0.6);
-    }
-    .h2{
-      font-style: normal;
-      font-weight: 600;
-      font-size: 36px;
-      line-height: 44px;
-      text-align: center;
-      letter-spacing: -0.04em;
-      margin-top: 250px;
-    }
-    .recipies-list {
-      display: flex;
-      margin: 90px;
-      justify-content: space-between;
-      border: 1px solid black;
-    }
-    .recipies-name {
-      margin-top: 5px;
-      width: 290px;
-    }
-    .recipies {
-      display: flex;
-      width: 230px;
-      margin-top: 10px;
-      justify-content: space-between;
-    }
-  </style>
   <body>
     <header class="header">
       <menu class="header__menu">
@@ -92,30 +36,30 @@
         <div class="contact-list">
           <div>
           <p class="contact-list__text">NAME</p>
-          <input type="text" />
+          <input type="text" class="input" placeholder="Enter your name..."/>
         </div>
         <div>
           <p class="contact-list__text">EMAIL ADDRESS</p>
-          <input type="text" />
+          <input type="text" class="input" placeholder="Your email address..."/>
         </div>
         </div>
         <div class="contact-list">
           <div>
           <p class="contact-list__text">SUBJECT</p>
-          <input type="text" />
+          <input type="text"  class="input" placeholder="Enter subject..."/>
         </div>
         <div>
           <p class="contact-list__text">ENQUIRY TYPE</p>
-          <select name="" id="">
+          <select name="" id="" class="input advertising" >
             <option value="Advertising">Advertising</option>
           </select>
         </div>
         </div>
         <div>
           <p class="contact-list__text">MESSAGES</p>
-          <input type="text" />
+          <input type="text" class="messages" placeholder="Enter your messages..."/>
         </div>
-        <button>Submit</button>
+        <button class="button">Submit</button>
       </form>
       <!-- Пробежавший мимо баннер -->
       <h2 class="h2">Check out the delicious recipe</h2>
