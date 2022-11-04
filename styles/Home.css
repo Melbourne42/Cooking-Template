@@ -11,6 +11,7 @@
     background-color: #E7FAFE;
     border-radius: 40px 0px 0px 40px;
     padding-left: 5%;
+    margin-left: 10%;
 }
 
 .home-page__header_button {
@@ -19,6 +20,7 @@
 
 .home-page__image  {
     grid-area: 1 / 2 / 2 / 3;
+    border-radius: 0px 40px 40px 0px;
 }
 
 .home-page__sticker {
@@ -27,27 +29,24 @@
     margin-top: 3%;
 }
 
-.home-page__image {
-    border-radius: 0px 40px 40px 0px;
-}
-
-.home-page__header_start-page-title {
-    font-style: normal;
+.home-page__header h1 {
     font-size: 64px;
     line-height: 77px;
     letter-spacing: -0.04em;
     width: 90%;
 }
 
-.home-page__header_start-page-text, .home-page__recipes_text {
-    font-style: normal;
+.home-page__header p, .home-page__recipes_text, 
+.home-page__additional-information p, .home-page__try-this p,
+.additional-information p, .home-page__instagram_text,
+.home-page__subscribe p {
     font-weight: 400;
     font-size: 16px;
     line-height: 28px;
     color: rgba(0, 0, 0, 0.6);
 }
 
-.home-page__header_start-page-title, .home-page__header_start-page-text {
+.home-page__header h1, .home-page__header p {
     text-align: start;
     margin-bottom: 5%;
     margin-top: -2%;
@@ -72,10 +71,18 @@
     grid-area: 2 / 2 / 3 / 3;
 }
 
-.home-page__header_author-recipes {
+.home-page__header button {
     grid-area: 1 / 3 / 3 / 4;
     justify-self: flex-end;
     margin-right: 10%;
+    width: 200px;
+    height: 60px;
+    border-radius: 16px;
+    font-size: 14px;
+    line-height: 17px;
+    letter-spacing: -0.02em;
+    color: #FFFFFF;
+    background: #000000;
 }
 
 .home-page__categories {
@@ -92,11 +99,23 @@
 
 .home-page__categories_header {
     margin: 10% 5% 5% 5%;
-    font-style: normal;
     font-size: 20px;
     line-height: 58px;
     letter-spacing: -0.04em;
 }
+
+.home-page__categories_header button {
+    width: 200px;
+    height: 60px;
+    font-size: 16px;
+    line-height: 19px;
+    letter-spacing: -0.02em;
+    color: #000000;
+    background: #E7FAFE;
+    border-radius: 16px;
+    border: 0;
+}
+
 
 .home-page__categories_card {
     text-align: center;
@@ -121,12 +140,15 @@
     height: 152px;
 }
 
-.home-page__recipes_title, .home-page__recipes_text {
+.home-page__recipes_title, .home-page__recipes_text,
+.home-page__instagram h1, .home-page__instagram_text,
+.home-page__button_instagram {
     text-align: center;
 }
 
-.home-page__recipes_title {
-    font-style: normal;
+.home-page__recipes_title, .home-page__additional-information h1, 
+.home-page__try-this h1, .additional-information h1, .home-page__subscribe h1, 
+.home-page__instagram h1 {
     font-size: 48px;
     line-height: 58px;
     letter-spacing: -0.04em;
@@ -137,7 +159,6 @@
     grid-template-columns: repeat(3, 35%);
     grid-template-rows: repeat(3,28%);
     justify-content: center;
-    margin: 25px;
 }
 
 .home-page__recipes {
@@ -145,13 +166,12 @@
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(2, 1fr);
     justify-content: center;
-    font-style: normal;
     font-size: 24px;
     line-height: 32px;
     letter-spacing: -0.04em;
     background: linear-gradient(180deg, rgba(231, 249, 253, 0) 0%, #E7F9FD 100%);
     border-radius: 30px;
-    padding-left: 30px;
+    padding-left: 12px;
 }
 
 .home-page__recipes_recipe {
@@ -171,19 +191,19 @@
 .home-page__recipes_banner {
     display: grid;
     grid-template-columns: 30%;
-    grid-template-rows: repeat(3, 35%);
+    grid-template-rows: repeat(3, 30%);
     align-items: center;
     grid-gap: 30px;
     margin-top: 5px;
 }
 
-.one {
+.recipes__banner_one {
 grid-area: 1 / 1 / 4 / 2; 
 }
 
-.two { 
+.recipes__banner_two { 
     grid-area: 1 / 1 / 2 / 2;
-    padding-left: 100px;
+    flex-wrap: wrap;
     font-family: 'Lobster', cursive;
     font-style: normal;
     font-weight: 400;
@@ -193,15 +213,16 @@ grid-area: 1 / 1 / 4 / 2;
     color: #FFFFFF;
 }
 
-.three { 
+.recipes__banner_three { 
     grid-area: 2 / 1 / 3 / 2;
-padding-top: 55%;
-padding-left: 15%;
+    padding-left: 20px;
+    padding-top: 50px;
 }
 
-.four { 
-    grid-area: 3 / 1 / 4 / 2; 
-    font-style: normal;
+.recipes__banner_four { 
+    grid-area: 3 / 2 / 4 / 1; 
+    justify-content:center;
+    padding-left: 130px;
     font-weight: 500;
     font-size: 14px;
     line-height: 17px;
@@ -214,11 +235,172 @@ padding-left: 15%;
     flex-wrap: nowrap;
 }
 
-.home-page__additional-information_image {
+.home-page__additional-information img {
     border-radius: 30px;
 }
 
-.home-page__instagram_instagram-account, .home-page__additional-information_image {
+.home-page__instagram, .home-page__additional-information_image {
     background-image: linear-gradient(180deg, rgba(231, 249, 253, 0) 0%, #E7F9FD 100%);
 }
 
+.home-page__instagram {
+    padding: 60px 0px 80px 0px;
+}
+
+.home-page__instagram_instagram-account {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.home-page__instagram_page {
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+}
+
+.home-page__instagram_page-header {
+    display: grid;
+    grid-template-columns: 10% 40% 1fr 10%;
+    grid-template-rows: repeat(2, 1fr);
+}
+
+.home-page__instagram_page-header_icon { 
+    grid-area: 1 / 1 / 3 / 2; 
+}
+.home-page__instagram_page-header_text { 
+    grid-area: 1 / 2 / 2 / 3; 
+}
+.home-page__instagram_page-header_location { 
+    grid-area: 2 / 2 / 3 / 3; 
+}
+.home-page__instagram_page-header_official { 
+    grid-area: 1 / 3 / 3 / 4; 
+}
+.home-page__instagram_page-header_more { 
+    grid-area: 1 / 4 / 3 / 5; 
+}
+
+.home-page__button {
+    width: 229px;
+    height: 60px;
+    font-size: 14px;
+    line-height: 17px;
+    letter-spacing: -0.02em;
+    color: #FFFFFF;
+    background: #000000;
+    border-radius: 16px;
+}
+
+.home-page__button_instagram {
+    margin-top: 20px;
+}
+
+.home-page__try-this_recipes {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+}
+
+.home-page__try-this_recipe {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    justify-content: center;
+    font-size: 24px;
+    line-height: 32px;
+    letter-spacing: -0.04em;
+    border-radius: 30px;
+}
+
+.home-page__try-this_recipe-img {
+    grid-area: 1 / 1 / 2 / 3;
+    border-radius: 20px;
+}
+
+.home-page__recipe_icon-like {
+    grid-area: 1 / 3 / 2 / 3;
+    padding: 10px 0px 10px 0px;
+}
+
+.home-page__try-this_recipe-name {
+    grid-area: 2 / 1 / 3 / 3;
+    flex-direction: column;
+}
+
+.home-page__icon,
+.home-page__header_author-date {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 17px;
+    letter-spacing: -0.02em;
+    color: rgba(0, 0, 0, 0.6);
+}
+
+.additional-information {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+}
+
+.additional-information p {
+    padding-bottom: 80px;
+}
+.home-page__instagram_text {
+    padding-bottom: 50px;
+}
+.home-page__try-this_header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 20px;
+}
+
+.home-page__subscribe {
+    text-align: center;
+    height: 560px;
+    background: #E7F9FD;
+    border-radius: 60px;
+    padding: 30px;
+    margin: 30px;
+}
+
+.home-page__subscribe_field {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 1fr;
+}
+
+.home-page__subscribe_field-image-1 {
+    grid-area: 1 / 1 / 2 / 5; 
+    margin-bottom: 30px;
+}
+
+.home-page__subscribe_field-image-2 {
+    grid-area: 1 / 4 / 2 / 5;
+    margin-left: 80px;
+}
+
+.home-page__subscribe_email {
+    grid-area: 1 / 2 / 2 / 4;
+    width: 480px;
+    height: 80px;
+    background: #FFFFFF;
+    border-radius: 24px;
+    margin-top: 50px;
+    border: 0;
+}
+
+.home-page__subscribe_button {
+    grid-area: 1 / 3 / 2 / 4;
+    margin-top: 60px;
+    margin-left: 20px;
+    width: 160px;
+    height: 60px;
+    background: #000000;
+    border-radius: 16px;
+    font-size: 14px;
+    line-height: 17px;
+    letter-spacing: -0.02em;
+    color: #FFFFFF;
+}

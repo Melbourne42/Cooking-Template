@@ -6,13 +6,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <link rel="stylesheet" href="styles/Normalize.css">
+    <link rel="stylesheet" type="text/css" href="styles/Home.css" />
+    <link rel="stylesheet" href="styles/General.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@600&family=Lato:wght@300;700;900&family=Montserrat&family=Oswald&family=Roboto+Slab:wght@300&family=Vollkorn&display=swap" rel="stylesheet"
     />
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@600&family=Lato:wght@300;700;900&family=Lobster&family=Montserrat&family=Oswald&family=Roboto+Slab:wght@300&family=Vollkorn&display=swap" rel="stylesheet"/>
-    <link rel="stylesheet" type="text/css" href="styles/Home.css" />
-    <link rel="stylesheet" href="styles/General.css" />
   </head>
   <body>
     <header>
@@ -32,8 +32,8 @@
       <article class="home-page">
         <div class="home-page__header">
           <img src="assets/images/hot_recipes.png" class="home-page__header_button" alt="recipes" />
-          <h1 class="home-page__header_start-page-title">Spicy delicious chicken wings</h1>
-          <p class="home-page__header_start-page-text">
+          <h1>Spicy delicious chicken wings</h1>
+          <p>
             Lorem ipsum dolor sit amet, consectetuipisicing elit, sed do eiusmod
             tempor incididunt ut labore et dolore magna aliqut enim ad minim
           </p>
@@ -44,55 +44,63 @@
             <div class="home-page__header_author-name">
               John Smith 
             </div>
-              <time class="home-page__header_author-date" datetime="2022-03-15">15 March 2022</time>
-            <img src="assets/images/Button_view_recipes.png" class="home-page__header_author-recipes" alt="button recipes"/>
+            <time class="home-page__header_author-date" datetime="2022-03-15">
+              15 March 2022
+            </time>
+            <button>
+              View Recipes
+              <img src="assets/images/PlayCircle.png" alt="play" />
+            </button>
           </div>
         </div>
         <img src="assets/images/baked_chicken_wings_asian_style_tomatoes_sauce_plate_1.png" class="home-page__image" alt="image home page"/>
-        <img
-          src="assets/images/Handpicked_recipes.png"
-          class="home-page__sticker"
-          alt="sticker"
-        />
+        <img src="assets/images/Handpicked_recipes.png" class="home-page__sticker" alt="sticker"/>
       </article>
       <article class="home-page__categories">
         <div class="home-page__categories_header">
           <h1>
             Categories
           </h1>
-          <img src="assets/images/Button_view_all_categories.png" alt="button categories"/>
-          <!-- поправить кнопку -->
+          <button>
+            View All Categories
+          </button>
         </div>
         <section class="home-page__categories_card">
           <figure class="home-page__categories_card-gray">
-            <img
-              src="assets/images/image_breakfast.png"
-              alt="category breakfast"
-            />
-            <figcaption>Breakfast</figcaption>
+            <img src="assets/images/image_breakfast.png" alt="category breakfast"/>
+            <figcaption>
+              Breakfast
+            </figcaption>
           </figure>
           <figure class="home-page__categories_card-gray">
             <img src="assets/images/image_vegan.png" alt="category vegan" />
-            <figcaption>Vegan</figcaption>
+            <figcaption>
+              Vegan
+            </figcaption>
           </figure>
           <figure class="home-page__categories_card-red">
             <img src="assets/images/image_meat.png" alt="category meat" />
-            <figcaption>Meat</figcaption>
+            <figcaption>
+              Meat
+            </figcaption>
           </figure>
           <figure class="home-page__categories_card-pink">
             <img src="assets/images/image_dessert.png" alt="category dessert" />
-            <figcaption>Dessert</figcaption>
+            <figcaption>
+              Dessert
+            </figcaption>
           </figure>
           <figure class="home-page__categories_card-gray">
             <img src="assets/images/image_lunch.png"  alt="category lunch" />
-            <figcaption>Lunch</figcaption>
+            <figcaption>
+              Lunch
+            </figcaption>
           </figure>
           <figure class="home-page__categories_card-gray">
-            <img
-              src="assets/images/image_chocolate.png"
-              alt="category chocolate"
-            />
-            <figcaption>Chocolate</figcaption>
+            <img src="assets/images/image_chocolate.png" alt="category chocolate"/>
+            <figcaption>
+              Chocolate
+            </figcaption>
           </figure>
         </section>
       </article>
@@ -110,8 +118,14 @@
               <h4>
                 Big and Juicy Wagyu Beef Cheeseburger
               </h4>
-              <img src="assets/images/icon_timer_30_minutes_without-background.png" alt="icon timer recipe-1"/>
-              <img src="assets/images/icon_ForkKnife_snack.png" alt="icon cutlery recipe-1"/>
+              <img src="assets/images/Timer.png" alt="icon timer recipe-1"/>
+              <span class="home-page__icon"> 
+                30 minutes
+              </span>
+              <img src="assets/images/ForkKnife.png" alt="icon cutlery recipe-1"/>
+              <span class="home-page__icon">
+                Snack
+              </span>  
             </figcaption>
           </figure>
           <figure class="home-page__recipes">
@@ -121,8 +135,14 @@
               <h4>
                 Fresh Lime Roasted Salmon with Ginger Sauce
               </h4>
-              <img src="assets/images/icon_timer_30_minutes_without-background.png" alt="icon timer recipe-2"/>
-              <img src="assets/images/icon_ForkKnife_fish.png" alt="icon cutlery recipe-2"/>
+              <img src="assets/images/Timer.png" alt="icon timer recipe-1"/>
+              <span class="home-page__icon"> 
+                30 minutes
+              </span>
+              <img src="assets/images/ForkKnife.png" alt="icon cutlery recipe-1"/>
+              <span class="home-page__icon">
+                Fish
+              </span> 
             </figcaption>
           </figure>
           <figure class="home-page__recipes">
@@ -132,8 +152,14 @@
               <h4>
                 Strawberry Oatmeal Pancake with Honey Syrup
               </h4>
-              <img src="assets/images/icon_timer_30_minutes_without-background.png" alt="icon timer recipe-3"/>
-              <img src="assets/images/icon_ForkKnife_breakfast.png" alt="icon cutlery recipe-3"/>
+              <img src="assets/images/Timer.png" alt="icon timer recipe-1"/>
+              <span class="home-page__icon"> 
+                30 minutes
+              </span>
+              <img src="assets/images/ForkKnife.png" alt="icon cutlery recipe-1"/>
+              <span class="home-page__icon">
+                Breakfast
+              </span> 
             </figcaption>
           </figure>
           <figure class="home-page__recipes">
@@ -143,8 +169,14 @@
               <h4>
                 Fresh and Healthy Mixed Mayonnaise Salad
               </h4>
-              <img src="assets/images/icon_timer_30_minutes_without-background.png" alt="icon timer recipe-4"/>
-              <img src="assets/images/icon_ForkKnife_healthy.png" alt="icon cutlery recipe-4"/>
+              <img src="assets/images/Timer.png" alt="icon timer recipe-1"/>
+              <span class="home-page__icon"> 
+                30 minutes
+              </span>
+              <img src="assets/images/ForkKnife.png" alt="icon cutlery recipe-1"/>
+              <span class="home-page__icon">
+                Healthy
+              </span> 
             </figcaption>
           </figure>
           <figure class="home-page__recipes">
@@ -154,19 +186,24 @@
               <h4>
                 Chicken Meatballs with Cream Cheese
               </h4>
-              <img src="assets/images/icon_timer_30_minutes_without-background.png" alt="icon timer recipe-5"/>
-              <img src="assets/images/icon_ForkKnife_meat.png" alt="icon cutlery recipe-5"/>
+              <img src="assets/images/Timer.png" alt="icon timer recipe-1"/>
+              <span class="home-page__icon"> 
+                30 minutes
+              </span>
+              <img src="assets/images/ForkKnife.png" alt="icon cutlery recipe-1"/>
+              <span class="home-page__icon">
+                Meat
+              </span> 
             </figcaption>
           </figure>
           <div class="home-page__recipes_banner">
           <!-- баннер -->
-            <img src="assets/images/Banner_fon_Dont_forget_to_eat_healthy_food.png" class="one" alt="banner"/>
-            <h3 class="two"> 
+            <img src="assets/images/Banner_fon_Dont_forget_to_eat_healthy_food.png" class="recipes__banner_one" alt="banner"/>
+            <h3 class="recipes__banner_two"> 
               Don’t forget to eat healthy food
             </h3>
-            <img src="assets/images/Banner_Dont_forget_to_eat_healthy_food.png" class="three" alt="banner"/>
-            <a href="www.foodieland.com" class="four">www.foodieland.com</a>
-          <!-- переделать класс -->
+            <img src="assets/images/Banner_Dont_forget_to_eat_healthy_food.png" class="recipes__banner_three" alt="banner"/>
+            <a href="www.foodieland.com" class="recipes__banner_four">www.foodieland.com</a>
           </div>
           <figure class="home-page__recipes">
             <img src="assets/images/image_Fruity_Pancake_with_Orange&Blueberry.png" class="home-page__recipes_recipe" alt="recipe-6"/>
@@ -175,8 +212,14 @@
               <h4>
                 Fruity Pancake with Orange & Blueberry
               </h4>
-              <img src="assets/images/icon_timer_30_minutes_without-background.png" alt="icon timer recipe-6"/>
-              <img src="assets/images/icon_ForkKnife_sweet.png" alt="icon cutlery recipe-6"/>
+              <img src="assets/images/Timer.png" alt="icon timer recipe-1"/>
+              <span class="home-page__icon"> 
+                30 minutes
+              </span>
+              <img src="assets/images/ForkKnife.png" alt="icon cutlery recipe-1"/>
+              <span class="home-page__icon">
+                Sweet
+              </span> 
             </figcaption>
           </figure>
           <figure class="home-page__recipes">
@@ -186,8 +229,14 @@
               <h4>
                 The Best Easy One Pot Chicken and Rice
               </h4>
-              <img src="assets/images/icon_timer_30_minutes_without-background.png" alt="icon timer recipe-7"/>
-              <img src="assets/images/icon_ForkKnife_snack.png" alt="icon cutlery recipe-7"/>
+              <img src="assets/images/Timer.png" alt="icon timer recipe-1"/>
+              <span class="home-page__icon"> 
+                30 minutes
+              </span>
+              <img src="assets/images/ForkKnife.png" alt="icon cutlery recipe-1"/>
+              <span class="home-page__icon">
+                Snack
+              </span>
             </figcaption>
           </figure>
           <figure class="home-page__recipes">
@@ -197,35 +246,368 @@
               <h4>
                 The Creamiest Creamy Chicken and Bacon Pasta
               </h4>
-              <img src="assets/images/icon_timer_30_minutes_without-background.png" alt="icon timer recipe-8"/>
-              <img src="assets/images/icon_ForkKnife_noodles.png" alt="icon cutlery recipe-8"/>
+              <img src="assets/images/Timer.png" alt="icon timer recipe-1"/>
+              <span class="home-page__icon"> 
+                30 minutes
+              </span>
+              <img src="assets/images/ForkKnife.png" alt="icon cutlery recipe-1"/>
+              <span class="home-page__icon">
+                Noodles
+              </span> 
             </figcaption>
           </figure>
         </article>
       </section>
       <section class="home-page__additional-information">
-        <div>
-          <h1>Everyone can be a
-              chef in their own kitchen
+        <div class="additional-information">
+          <h1>
+            Everyone can be a chef in their own kitchen
           </h1>
           <p>Lorem ipsum dolor sit amet, consectetuipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqut enim ad minim
           </p>
-          <img src="assets/images/Button_learn_more.png" alt="button learn more"/>
+          <button class="home-page__button">
+            Learn More
+          </button>
         </div>
         <div>
-          <img src="assets/images/portrait_happy_male_chef_dressed_uniform_1.png" class="home-page__additional-information_image" alt="icon cutlery recipe-8"/>
+          <img src="assets/images/portrait_happy_male_chef_dressed_uniform_1.png" alt="icon cutlery recipe-8"/>
         </div>
       </section>
       <section class="home-page__instagram">
-        <h1>Check out @foodieland on Instagram</h1>
-        <p>Lorem ipsum dolor sit amet, consectetuipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqut enim ad minim</p>
+        <h1>
+          Check out @foodieland on Instagram
+        </h1>
+        <p class="home-page__instagram_text">
+          Lorem ipsum dolor sit amet, consectetuipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqut enim ad minim
+        </p>
         <div class="home-page__instagram_instagram-account">
-          <div>
-            <img src="assets/images/icon_foodieland.png" alt="icon"/>
-          </div>
-          <img src="assets/images/Photo_instagram_card1.png" class="" alt="instagram card 1" />
-    </div>
+          <figure class="home-page__instagram_page">
+            <div class="home-page__instagram_page-header">
+              <img src="assets/images/icon_foodieland.png" class="home-page__instagram_page-header_icon" alt="icon"/>
+              <h5 class="home-page__instagram_page-header_text">
+                Foodieland.
+              </h5>
+              <span class="home-page__instagram_page-header_location">
+                Tokyo, Japan
+              </span>
+              <img src="assets/images/Official_Icon.png" class="home-page__instagram_page-header_official" alt="icon"/>
+              <img src="assets/images/More_Icon.png" class="home-page__instagram_page-header_more" alt="icon"/>
+            </div>
+            <div>
+              <img src="assets/images/Photo_instagram_card1.png" alt="instagram card 1" />
+              <img src="assets/images/Number_page.png" alt="icon"/>
+            </div>
+            <figcaption>
+              <div>
+                <img src="assets/images/Like.png" alt="icon"/>
+                <img src="assets/images/Comment.png" alt="icon"/>
+                <img src="assets/images/Messanger.png" alt="icon"/>
+                <img src="assets/images/Pagination.png" alt="icon"/>
+                <img src="assets/images/Save.png" alt="icon"/>
+              </div>
+              <img src="assets/images/Photo_liked_by.png" alt="icon"/>
+                Liked by craig_love and 44,686 others
+              <p>
+                Foodieland. The vegetables dishes need to have certain vitamin for those people
+              </p>
+              <div>
+                September 19
+              </div>
+            </figcaption>
+          </figure>
+          <figure class="home-page__instagram_page">
+            <div class="home-page__instagram_page-header">
+              <img src="assets/images/icon_foodieland.png" class="home-page__instagram_page-header_icon" alt="icon"/>
+              <h5 class="home-page__instagram_page-header_text">
+                Foodieland.
+              </h5>
+              <span class="home-page__instagram_page-header_location">
+                Tokyo, Japan
+              </span>
+              <img src="assets/images/Official_Icon.png" class="home-page__instagram_page-header_official" alt="icon"/>
+              <img src="assets/images/More_Icon.png" class="home-page__instagram_page-header_more" alt="icon"/>
+            </div>
+            <div>
+              <img src="assets/images/Photo_instagram_card2.png" alt="instagram card 2" />
+              <img src="assets/images/Number_page.png" alt="icon"/>
+            </div>
+            <figcaption>
+              <div>
+                <img src="assets/images/Like.png" alt="icon"/>
+                <img src="assets/images/Comment.png" alt="icon"/>
+                <img src="assets/images/Messanger.png" alt="icon"/>
+                <img src="assets/images/Pagination.png" alt="icon"/>
+                <img src="assets/images/Save.png" alt="icon"/>
+              </div>
+              <img src="assets/images/Photo_liked_by.png" alt="icon"/>
+                Liked by craig_love and 44,686 others
+              <p>
+                Foodieland. Sweet food can bring someon into happiness as long as they don’t eat to much
+              </p>
+              <div>
+                September 19
+              </div>
+            </figcaption>
+          </figure>
+          <figure class="home-page__instagram_page">
+            <div class="home-page__instagram_page-header">
+              <img src="assets/images/icon_foodieland.png" class="home-page__instagram_page-header_icon" alt="icon"/>
+              <h5 class="home-page__instagram_page-header_text">
+                Foodieland.
+              </h5>
+              <span class="home-page__instagram_page-header_location">
+                Tokyo, Japan
+              </span>
+              <img src="assets/images/Official_Icon.png" class="home-page__instagram_page-header_official" alt="icon"/>
+              <img src="assets/images/More_Icon.png" class="home-page__instagram_page-header_more" alt="icon"/>
+            </div>
+            <div>
+              <img src="assets/images/Photo_instagram_card3.png" alt="instagram card 3" />
+              <img src="assets/images/Number_page.png" alt="icon"/>
+            </div>
+            <figcaption>
+              <div>
+                <img src="assets/images/Like.png" alt="icon"/>
+                <img src="assets/images/Comment.png" alt="icon"/>
+                <img src="assets/images/Messanger.png" alt="icon"/>
+                <img src="assets/images/Pagination.png" alt="icon"/>
+                <img src="assets/images/Save.png" alt="icon"/>
+              </div>
+              <img src="assets/images/Photo_liked_by.png" alt="icon"/>
+              Liked by craig_love and 44,686 others
+              <p>
+                Foodieland. What are you doing before start cooking? prepare the  tools or ingredients?
+              </p>
+              <div>
+                September 19
+              </div>
+            </figcaption>
+          </figure>
+          <figure class="home-page__instagram_page">
+            <div class="home-page__instagram_page-header">
+              <img src="assets/images/icon_foodieland.png" class="home-page__instagram_page-header_icon" alt="icon"/>
+              <h5 class="home-page__instagram_page-header_text">
+                Foodieland.
+              </h5>
+              <span class="home-page__instagram_page-header_location">
+                Tokyo, Japan
+              </span>
+              <img src="assets/images/Official_Icon.png" class="home-page__instagram_page-header_official" alt="icon"/>
+              <img src="assets/images/More_Icon.png" class="home-page__instagram_page-header_more" alt="icon"/>
+            </div>
+            <div>
+              <img src="assets/images/Photo_instagram_card4.png" alt="instagram card 4" />
+              <img src="assets/images/Number_page.png" alt="icon"/>
+            </div>
+            <figcaption>
+              <div>
+                <img src="assets/images/Like.png" alt="icon"/>
+                <img src="assets/images/Comment.png" alt="icon"/>
+                <img src="assets/images/Messanger.png" alt="icon"/>
+                <img src="assets/images/Pagination.png" alt="icon"/>
+                <img src="assets/images/Save.png" alt="icon"/>
+              </div>
+              <img src="assets/images/Photo_liked_by.png" alt="icon"/>
+                Liked by craig_love and 44,686 others
+              <p>
+                Foodieland. Steak never be wrong, it’s suitable for you who want romantic dinner
+              </p>
+              <div>
+                September 19
+              </div>
+            </figcaption>
+          </figure>
+        </div>
+        <div class="home-page__button_instagram">
+          <button class="home-page__button">
+            Visit Our Instagram
+            <img src="assets/images/icon_instagram_white.png" alt="icon"/>
+          </button>
+        </div>
+      </section>
+      <section class="home-page__try-this">
+        <div class="home-page__try-this_header">
+          <h1>
+            Try this delicious recipe to make your day
+          </h1>
+          <p>
+            Lorem ipsum dolor sit amet, consectetuipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqut enim ad minim
+          </p>
+        </div>
+        <div class="home-page__try-this_recipes">
+        <figure class="home-page__try-this_recipe">
+          <img src="assets/images/image_Mixed_Tropical_Fruit_Salad_with_Superfood_Boosts.png" class="home-page__try-this_recipe-img" alt="recipe-1"/>
+          <img src="assets/images/image_like_active.png" class="home-page__recipe_icon-like" alt="like active"/>
+          <figcaption class="home-page__try-this_recipe-name">
+            <h4>
+              Mixed Tropical Fruit Salad with Superfood Boosts 
+            </h4>
+            <img src="assets/images/Timer.png"  alt="icon timer"/>
+            <span class="home-page__icon"> 
+              30 minutes
+            </span>
+            <img src="assets/images/ForkKnife.png" alt="icon cutlery"/>
+            <span class="home-page__icon">
+              Healthy
+            </span>
+          </figcaption>
+        </figure>
+        <figure class="home-page__try-this_recipe">
+          <img src="assets/images/image_Big_and_Juicy_Wagyu_Beef.png" class="home-page__try-this_recipe-img" alt="recipe-2"/>
+          <img src="assets/images/image_like_not_active.png" class="home-page__recipe_icon-like" alt="like not active"/>
+          <figcaption class="home-page__try-this_recipe-name">
+            <h4>
+              Big and Juicy Wagyu Beef Cheeseburger
+            </h4>
+            <img src="assets/images/Timer.png" alt="icon timer"/>
+            <span class="home-page__icon"> 
+              30 minutes
+            </span>
+            <img src="assets/images/ForkKnife.png" alt="icon cutlery"/>
+            <span class="home-page__icon">
+              Western
+            </span> 
+          </figcaption>
+        </figure>
+        <figure class="home-page__try-this_recipe">
+          <img src="assets/images/image_Healthy_Japanese_Fried_Rice_with_Asparagus.png" class="home-page__try-this_recipe-img" alt="recipe-3"/>
+          <img src="assets/images/image_like_active.png" class="home-page__recipe_icon-like" alt="like active"/>
+          <figcaption class="home-page__try-this_recipe-name">
+            <h4>
+              Healthy Japanese Fried Rice with Asparagus 
+            </h4>
+            <img src="assets/images/Timer.png" alt="icon timer"/>
+            <span class="home-page__icon"> 
+              30 minutes
+            </span>
+            <img src="assets/images/ForkKnife.png" alt="icon cutlery"/>
+            <span class="home-page__icon">
+              Healthy
+            </span>
+          </figcaption>
+        </figure>
+        <figure class="home-page__try-this_recipe">
+          <img src="assets/images/image_Cauliflower_Walnut_Vegetarian_Taco_Meat.png" class="home-page__try-this_recipe-img" alt="recipe-4"/>
+          <img src="assets/images/image_like_not_active.png" class="home-page__recipe_icon-like" alt="like not active"/>
+          <figcaption class="home-page__try-this_recipe-name">
+            <h4>
+              Cauliflower Walnut Vegetarian Taco Meat
+            </h4>
+            <img src="assets/images/Timer.png" alt="icon timer"/>
+            <span class="home-page__icon"> 
+              30 minutes
+            </span>
+            <img src="assets/images/ForkKnife.png" alt="icon cutlery"/>
+            <span class="home-page__icon">
+              Eastern
+            </span>
+          </figcaption>
+        </figure>
+        <figure class="home-page__try-this_recipe">
+          <img src="assets/images/image_Rainbow_Chicken-Salad_with_Almond_Honey_Mustard_Dressing.png" class="home-page__try-this_recipe-img" alt="recipe-5"/>
+          <img src="assets/images/image_like_active.png" class="home-page__recipe_icon-like" alt="like active"/>
+          <figcaption class="home-page__try-this_recipe-name">
+            <h4>
+              Rainbow Chicken Salad with Almond Honey Mustard Dressing
+            </h4>
+            <img src="assets/images/Timer.png" alt="icon timer"/>
+            <span class="home-page__icon"> 
+              30 minutes
+            </span>
+            <img src="assets/images/ForkKnife.png" alt="icon cutlery"/>
+            <span class="home-page__icon">
+              Healthy
+            </span>
+          </figcaption>
+        </figure>
+        <figure class="home-page__try-this_recipe">
+          <img src="assets/images/image_Barbeque_Spicy_Sandwiches_with_Chips.png" class="home-page__try-this_recipe-img" alt="recipe-6"/>
+          <img src="assets/images/image_like_not_active.png" class="home-page__recipe_icon-like" alt="like not active"/>
+          <figcaption class="home-page__try-this_recipe-name">
+            <h4>
+              Barbeque Spicy Sandwiches with Chips
+            </h4>
+            <img src="assets/images/Timer.png" alt="icon timer"/>
+            <span class="home-page__icon"> 
+              30 minutes
+            </span>
+            <img src="assets/images/ForkKnife.png" alt="icon cutlery"/>
+            <span class="home-page__icon">
+              Snack
+            </span>
+          </figcaption>
+        </figure>
+        <figure class="home-page__try-this_recipe">
+          <img src="assets/images/image_Firecracker_Vegan_Lettuce_Wraps_Spicy.png" class="home-page__try-this_recipe-img" alt="recipe-7"/>
+          <img src="assets/images/image_like_not_active.png" class="home-page__recipe_icon-like" alt="like not active"/>
+          <figcaption class="home-page__try-this_recipe-name">
+            <h4>
+              Firecracker Vegan Lettuce Wraps - Spicy!
+            </h4>
+            <img src="assets/images/Timer.png" alt="icon timer"/>
+            <span class="home-page__icon"> 
+              30 minutes
+            </span>
+            <img src="assets/images/ForkKnife.png" alt="icon cutlery"/>
+            <span class="home-page__icon">
+              Seafood
+            </span>
+          </figcaption>
+        </figure>
+        <figure class="home-page__try-this_recipe">
+          <img src="assets/images/Image_Chicken_Ramen_Soup_with_Mushroom.png" class="home-page__try-this_recipe-img" alt="recipe-8"/>
+          <img src="assets/images/image_like_active.png" class="home-page__recipe_icon-like" alt="like active"/>
+          <figcaption class="home-page__try-this_recipe-name">
+            <h4>
+              Chicken Ramen Soup with Mushroom
+            </h4>
+            <img src="assets/images/Timer.png" alt="icon timer"/>
+            <span class="home-page__icon"> 
+              30 minutes
+            </span>
+            <img src="assets/images/ForkKnife.png" alt="icon cutlery"/>
+            <span class="home-page__icon">
+              Japanese
+            </span>
+          </figcaption>
+        </figure>
+      </div>
     </section>
+    <div class="home-page__subscribe">
+      <h1>
+        Deliciousness to your inbox
+      </h1>
+      <p>
+        Lorem ipsum dolor sit amet, consectetuipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqut enim ad minim
+      </p>
+      <div class="home-page__subscribe_field">
+        <img src="assets/images/image_banner1.png" class="home-page__subscribe_field-image-1" alt="image"/>
+        <img src="assets/images/image_banner2.png" class="home-page__subscribe_field-image-2" alt="image"/>
+        <input class="home-page__subscribe_email" type="text" placeholder="Your email address..."/>
+        <button class="home-page__subscribe_button">
+          Subscribe
+        </button>
+      </div>
+    </div>
     </main>
+    <footer>
+      <div class="footer">
+        <div>
+          <img src="assets/Foodieland.svg" alt="" />
+          <p class="light-text">
+            Lorem ipsum dolor sit amet, consectetuipisicing elit,
+          </p>
+        </div>
+        <div>
+          <menu class="footer__menu">
+            <a href="2">Recipies</a>
+            <a href="3">Blog</a>
+            <a href="4">Contact</a>
+            <a href="5">About us</a>
+          </menu>
+        </div>
+      </div>
+      <div class="footer-webflow">&#169 2022 Flowbase. Powered by Webflow</div>
+    </footer>
   </body>
 </html>
