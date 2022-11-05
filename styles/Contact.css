@@ -74,11 +74,15 @@
     display: flex;
     margin: 90px;
     justify-content: space-between;
-    border: 1px solid black;
   }
   .recipies-name {
     margin-top: 5px;
     width: 290px;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 26px;
+    letter-spacing: -0.04em;
   }
   .recipies {
     display: flex;
